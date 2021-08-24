@@ -1,0 +1,129 @@
+main{
+    overflow-x: hidden;
+}
+
+.main-top{
+    height: 100vh;
+    min-height: 600px;
+    padding-top: 4rem;
+    background: url("../images/h1_hero.jpg");
+    overflow: hidden;
+
+    @include media{
+        max-height: 500px;
+    }
+}
+
+.jumbotron{
+    @include container;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+
+    @include media{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.jumbotron__name{
+    color: black;
+
+    h2{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 60px;
+        padding-top: 0.5rem;
+    }
+
+    h1, h2{
+        font-family: Original Surfer;
+    }
+
+    p{
+        font-size: 15px;
+        padding-top: 2rem;
+        line-height: 1.5rem;
+        font-family: cursive;
+    }
+
+    & span{
+        color: $accent-color;
+    }
+
+    .jumbotron__buttons{
+        @include makeFlex(column);
+        align-items: flex-start;
+        padding-top: 3rem;
+
+        &--btn{
+            position: relative;
+            z-index: 0;
+            margin: 1rem 1rem 0 0;
+            cursor: pointer;
+            background: $accent-color;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid $accent-color;
+            font-size: 1rem;
+
+            & div:first-child{
+                padding: 0.5em 1em;
+
+                & a{
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+
+            @include overlay;
+
+        }
+
+        &--btn:last-child{
+                background: transparent;
+                border: 1px solid $accent-color;
+                color: $accent-color;
+
+                &:hover{
+                    color: white;
+                }
+        }
+
+        // media
+        @include media{
+            @include makeFlex(row);
+        }
+
+    
+    }
+}
+
+.jumbotron__image{
+   width: 100%;
+   height: 100%;
+   display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    &>div{
+        transform: translateY(33px);
+        &>img{
+             width: auto;
+            height: 500px;
+        }
+    }
+}
+
+
+// main-mid
+
+.main-mid{
+    position: relative;
+    min-height: 500px;
+}

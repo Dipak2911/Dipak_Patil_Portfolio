@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="./css/main.css" >
+    <link rel="stylesheet" href="./css/fontawsome/css/all.css" >
+    <link href='https://fonts.googleapis.com/css?family=Original Surfer' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="hammenu__btn">
+               <span class="hammenu__btn--span"></span>
+            </div>
+
+            <div class="nav__logo">
+                <img alt="logo" src="../dist/images/Dlogo.png">
+            </div>
+    
+            <div class="hammenu">
+
+                <ul class="hammenu__list">
+                    <li class="hammenu__list--item"><a href="#experience" onclick="closeNav()">Experience </a></li>
+                    <li class="hammenu__list--item"><a href="#education" onclick="closeNav()">Education </a></li>
+                    <li class="hammenu__list--item"><a href="#project" onclick="closeNav()">Projects </a></li>
+                    <li class="hammenu__list--item hammenu__list--btn">
+                        <div>
+                            <a href="#footer" onclick="closeNav()">Contact </a>
+                        </div>
+
+                        <div class="overlay">
+                            
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="takeMeTop" onclick="scrollToTop()">
+            <i class="fas fa-angle-double-up"></i>
+        </div>
+
+        <div class="main-top">
+
+            <div class="jumbotron">
+
+                <div class="jumbotron__name" data-aos="fade-right">
+                    <h2>Hello I'm</h2>
+                    <h1><span>Dipak Patil</span></h1>
+                    <p>  <strong>I'm an enthusiastic Software Engineer </strong> with 1-year of industry experience.
+                        Having a strong technical background and ability to work in the full
+                        software development lifecycle. Being worked upon different projects
+                        helped me to adapt to changes quickly and become an effective team
+                        member. I am able to work well under pressure and adhere to strict
+                        deadlines.
+                    </p>
+
+                    <div class="jumbotron__buttons" data-aos="fade-right">
+
+                        <div class='jumbotron__buttons--btn'>
+                            <div>
+                                <a> Download Resume</a>
+                            </div>
+
+                            <div class="overlay">
+                                
+                            </div>
+                        </div>
+
+                        <div class='jumbotron__buttons--btn'>
+                            <div>
+                                <a> Contact me</a>
+                            </div>
+                        
+                            <div class="overlay">
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="jumbotron__image">
+                    <div>
+                        <img src="../dist/images/hero.png">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-mid">
+    
+            <div id="experience" class="experience">
+
+                <div class="experience-container">
+
+                    <div  class="about-me-title" data-aos="fade-up">
+                    
+                        <div>
+                            <h1>Work Experience</h1>
+                        </div>
+                        
+                    </div>
+
+                    <div class="experience-card" data-aos="fade-up">
+                        <div class="fade floating-img" style="background: url('../dist/images/logo/logo1.jpg');background-repeat: no-repeat;background-size: cover;">
+                           
+                        </div>
+
+                        <div class="fade floating-img" style="background: url('../dist/images/logo/logo4.jpg');background-repeat: no-repeat;background-size: cover;">
+                            
+                        </div>
+
+                        <div class="experience-slide fade">
+                            <div>
+                                <p>
+                                    
+                                    Working as customer application support engineer
+                                    Skilled at coding and working knowledge of Java, HTTP, XML, JSON, XPath,
+                                    SOAP web service, REST API, WSDL, Databases.<br>
+                                    Looking into issues related with TIBCO Cloud Integration, an enterprise
+                                    integration platform-as-a-service (iPaaS)
+                                    Implementing solutions that effectively resolves the problems or provide
+                                    improvement. Hands-on experience and troubleshooting issues in TIBCO
+                                    Businessworks 6X and other related products(BW 5X, EMS).
+                                    Attend high severity production cases and resolve issue as quickly as possible
+                                    to avoid severe business impact.<br>
+                                    Conceptual knowledge of enterprise architecture, integration, and business
+                                    process management.<br><br>
+                                    <strong>Acheievement</strong> Recognition - Upcoming Talent - Q2 2021
+
+                                 
+                                </p>
+                            </div>     
+                        </div>
+
+                        <div class="experience-slide fade" >
+                            <div>
+                                <p> During my short journey with TCS I was being trained as Salesforce Developer and Administrator. <br> I have worked on management system test project. </p>
+                            </div>
+                        </div>
+
+                        <div class="dots">
+                            <span class="dot" onclick="showSlide(0)"></span>
+                            <span class="dot" onclick="showSlide(1)"></span>
+                        </div>
+
+                        <div class="next" onclick="plusSlide(1)">
+                            <span> &#10095; </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+          
+            <div id="education" class="education-wrapper">
+
+                <div class="about-me-title" data-aos="fade-up">
+                    
+                    <div>
+                        <h1>Education</h1>
+                    </div>
+                    
+                </div>
+           
+                <div class="education">
+
+                    <div class="education-card-wrapper" data-aos="fade-right">
+
+                            <div class="education-card">
+                                
+                                <div class="education-card-icon">
+
+                                    <div>
+                                        <i class="fas fa-school fa-3x education-icon"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="education-card-content">
+                                    
+                                    <h3>SSC</h3>
+
+                                    <p>
+                                        <i class="info-icons fas fa-book-reader"></i>
+                                        <span> R.C.Patel Secondary School, Shirpur</span>
+                                    </p>
+    
+                                    <p>
+                                        <i class="info-icons fas fa-clock"></i>
+                                        <span> 2013-2014</span>
+                                    </p>
+    
+                                    <p>
+                                        <i class=" info-icons fas fa-award"></i>
+                                        <span> Percentage : 95.40 %</span>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                    </div>
+
+                <div class="education-card-wrapper" data-aos="fade-up">
+
+                        <div class="education-card">
+                            
+                            <div class="education-card-icon">
+
+                                <div>
+                                    <i class="fas fa-university fa-3x education-icon"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="education-card-content">
+                                
+                                <h3>HSC</h3>
+
+                                <p>
+                                    <i class="info-icons fas fa-book-reader"></i>
+                                    <span> R.C.Patel Junior College, Shirpur</span>
+                                </p>
+
+                                <p>
+                                    <i class="info-icons fas fa-clock"></i>
+                                    <span> 2015-2016</span>
+                                </p>
+
+                                <p>
+                                    <i class=" info-icons fas fa-award"></i>
+                                    <span> Percentage : 87.54 %</span>
+                                </p>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="education-card-wrapper" data-aos="fade-left">
+
+                        <div class="education-card">
+                            
+                            <div class="education-card-icon">
+
+                                <div>
+                                    <i class="fas fa-graduation-cap fa-3x education-icon"></i>
+                                </div>
+                                
+                            </div>
+
+                            <div class="education-card-content">
+                                
+                                <h3>BE(Computer)</h3>
+
+                                <p>
+                                    <i class="info-icons fas fa-book-reader"></i>
+                                    <span> Modern Education Socity's College of Engineering , Pune <br><strong>(University of Pune)</strong></span>
+                                </p>
+
+                                <p>
+                                    <i class="info-icons fas fa-clock"></i>
+                                    <span> 2016-2020</span>
+                                </p>
+
+                                <p>
+                                    <i class=" info-icons fas fa-award"></i>
+                                    <span> CGPA : 8.68</span>
+                                </p>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="skills">
+
+                <div class="skills-container">
+
+                    <div class="about-me-title" data-aos="fade-right">
+                    
+                        <div>
+                            <h1>My Skills</h1>
+                        </div>
+                        
+                    </div>
+
+                    <div class="skills-content">
+
+                        <div class="skill-container" data-aos="flip-left">
+                            <div class="skill-icon">
+                                <img src="../dist/images/logo/code.png">
+                            </div>
+                            <div class="skill-description">
+                                Java, Python, C/C++
+                            </div>
+                        </div>
+
+                        <div class="skill-container" data-aos="flip-left">
+                            <div class="skill-icon">
+                                <img src="../dist/images/logo/web-development.png">
+                            </div>
+                            <div class="skill-description">
+                                HTML/CSS, Javascript, ReactJS
+                            </div>
+                        </div>
+
+                        <div class="skill-container" data-aos="flip-left">
+                            <div class="skill-icon">
+                                <img src="../dist/images/logo/databases.png">
+                            </div>
+                            <div class="skill-description">
+                                Databases
+                            </div>
+                        </div>
+
+                        <div class="skill-container" data-aos="flip-left">
+                            <div class="skill-icon">
+                                <img src="../dist/images/logo/android.png">
+                            </div>
+                            <div class="skill-description">
+                                Andriod development
+                            </div>
+                        </div>
+
+                        <div class="skill-container" data-aos="flip-left">
+                            <div class="skill-icon">
+                                <img src="../dist/images/logo/brain.png">
+                            </div>
+                            <div class="skill-description">
+                                Machine Learning, Natural Laguage Processing
+                            </div>
+                        </div>
+
+                        <div class="skill-container" data-aos="flip-left">
+                            <div class="skill-icon">
+                                <img src="../dist/images/logo/framework.png">
+                            </div>
+                            <div class="skill-description">
+                                Hibernate, Flask, AngularJS
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="project" class="project">
+
+                <div class="project-container">
+
+                    <div class="about-me-title" data-aos="flip-up">
+                    
+                        <div>
+                            <h1>My Projects & Acheievement</h1>
+                        </div>
+                        
+                    </div>
+
+                    <div class="projects-grid">
+
+                        <div class="project-card" data-aos="fade-right">
+                            <div>
+                                <div class="project-card-img">
+                                    <img src="../dist/images/logo/ach.jpg">
+                                </div>
+                                <div class="project-card-content">
+                                    <div class="project-date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <h5>Aug 2020</h5>
+                                    </div>
+                                    <div class="project-info">
+                                        <h4><a href="https://drive.google.com/file/d/1vLmJ_nHIfvbEPC1MOM9hkXlkT2wyFQb6/view">Acheievement</a></h4>
+                                        <h5> Smart India Hackathon SIH-2020 RunnerUP Squad </h5>
+                                        <div class="hidden-info">
+                                            <h5>My team performed on national level competition organised by SIH2020 .we worked on Sentimental analysis of code mixed language project which was provided by BEL(Bharat Electronics Limited) .
+                                                </h5>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card"  data-aos="fade-left">
+                            <div>
+                                <div class="project-card-img">
+                                    <img src="../dist/images/logo/NLP.jpg">
+                                </div>
+                                <div class="project-card-content">
+                                    <div class="project-date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <h5>May - Aug 2020</h5>
+                                    </div>
+                                    <div class="project-info">
+                                        <h4><a href="https://github.com/TeamBootUp">Sentimental Analysis of Code Mixed Language :</a></h4>
+                                        <h5> Presented project at SIH 2020 for AICTE and BHEL India which does sentimental analysis of code mixed lanaguage. </h5>
+                                        <div class="hidden-info">
+                                            <h5>Worked on project which does sentimental analysis of code mixed languages . Target was to analyse social media post
+                                                for their sentimental message , As most of the social media content now a days is code mixed.(eg - Hinglish , Devnagri + English)
+                                                This project provides solution for Indian Science Ministry at National Level Competition (SIH 2020)<br><br>
+                                                <strong>Technology stack :</strong> NLP (Natural Language Processing) , Python , RNN(Recurrent Neural Network) with LSTM , Django
+                                                </h5>
+                                     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card"  data-aos="fade-right">
+                            <div>
+                                <div class="project-card-img">
+                                    <img src="../dist/images/logo/diet2.jpg">
+                                </div>
+                                <div class="project-card-content">
+                                    <div class="project-date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <h5>Jan - May 2020</h5>
+                                    </div>
+                                    <div class="project-info">
+                                        <h4><a href="https://github.com/Dipak2911/Health_monitoring_system_based_on_diet_evaluation">Monitoring System Based On Diet Evaluation (Using NLP and KNN)</a></h4>
+                                        <h5></h5>
+                                        <div class="hidden-info" >
+                                            <h5>Machine Learning based project which will suggest a diet based on health, medical pre-condition,preferences and diet history. NLP has been used to get user input and
+                                                specially designed ML algorithm which recalibrates diet chart dynamically. For user feasibility Client side Application is developed using Android
+                                                Framework(Java) and server (Using Flask Rest Framework) is deployed on Heroku cloud platform for
+                                                remote access.<br><br>
+                                                Technology stack : NLP (Natural Language Processing) , Cloud deployment of server (Heroku) , Machine Learning (ML) Android (Client
+                                                Application)
+                                            </h5>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card"  data-aos="fade-left">
+                            <div>
+                                <div class="project-card-img">
+                                    <img src="../dist/images/logo/attend.jpg">
+                                </div>
+                                <div class="project-card-content">
+                                    <div class="project-date">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <h5>Aug - Dec 2018</h5>
+                                    </div>
+                                    <div class="project-info">
+                                        <h4><a href="#">ERP (Attendence Management System)</a></h4>
+                                        <h5>Worked as an team leader as well as active group member in a team of 4 people contributing to the construction of a
+                                            database , UI and coding.</h5>
+                                            
+                                            <div class="hidden-info">
+                                                <h5>Worked on ERP for college which would maintain attendance of students. It will give data analysis from teachers as
+                                                    well as the student’s perspective.<br><br>
+                                                   
+                                                <strong>Technology stack :</strong> Java , MySQL , UI using Java Swing. Platform - Eclipse IDE 
+                                            </h5>
+                                            </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+    </main>
+
+    <footer id="footer" >
+        <div class="footer-container">
+            <div class="footer-social">
+                <ul class="footer-social-icon-list">
+                    <li class="footer-stay-connected"><h5>Stay Connected </h5></li>
+                    <li class="footer-icon"><a style="color: rgba(255, 251, 251, 0.74);" href="https://www.linkedin.com/in/dipak-patil-26b914169"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="footer-icon"><a style="color: rgba(255, 251, 251, 0.74);" href="https://github.com/Dipak2911"><i class="fab fa-github"></i></a></li>
+                    <li class="footer-icon"><a style="color: rgba(255, 251, 251, 0.74);" href="mailto:eng.dipak4@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li class="footer-icon"><a style="color: rgba(255, 251, 251, 0.74);" href="https://instagram.com/dee_leonidas?utm_medium=copy_link"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+ 
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./js/main.js"> </script>
+<script src="./css/fontawsome/js/all.js"> </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({ duration : 1000});
+</script>
+
+
+</html>
+

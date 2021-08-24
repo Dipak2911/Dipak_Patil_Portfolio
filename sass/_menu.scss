@@ -139,15 +139,21 @@ header{
                     & a{
                         position: relative;
                         z-index: 2;
+                        color: $accent-color
+                        
 
-                        &:hover{
-                            color: white;
-                        }
+                        
                     }
                 }
     
                 &:hover{
                     color: white;
+
+                    div:first-child{
+                        a{
+                            color: white;
+                        }
+                    }
                 }
             }
 

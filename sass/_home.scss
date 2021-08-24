@@ -90,9 +90,15 @@ main{
                 background: transparent;
                 border: 1px solid $accent-color;
                 color: $accent-color;
+                a{
+                    color: $accent-color;
+                }
 
                 &:hover{
-                    color: white;
+                    a{
+                        color: white;
+                    }
+                    
                 }
         }
 

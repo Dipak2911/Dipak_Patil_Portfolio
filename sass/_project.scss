@@ -44,13 +44,18 @@
 
         .project-card{
             margin:  0 auto;
-            min-height: 500px;
-            max-height: 500px;
+            min-height: 500px;  
+            max-height: 600px;  
             max-width: 500px;
             background-color: white;
             border-radius: 5px;
             box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
             transition:  all ease-in-out 0.5s;
+
+            @include media{
+                min-height: 500px;
+                max-height: 500px;
+            }
 
             &:hover{
                 box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);

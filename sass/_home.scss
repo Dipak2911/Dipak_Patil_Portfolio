@@ -3,14 +3,14 @@ main{
 }
 
 .main-top{
-    height: 100vh;
     min-height: 600px;
+    max-height: 200vh;
     padding-top: 4rem;
     background: url("../images/h1_hero.jpg");
     overflow: hidden;
 
     @include media{
-        max-height: 500px;
+        max-height: 100vh;
     }
 }
 
@@ -21,12 +21,12 @@ main{
     grid-template-columns: 1fr;
     grid-template-rows: 100%;
     height: 100%;
-    justify-items: center;
-    align-items: center;
     padding: 2rem;
 
     @include media{
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
     }
 }
 
@@ -40,6 +40,7 @@ main{
     h1{
         font-size: 60px;
         padding-top: 0.5rem;
+    
     }
 
     h1, h2{
@@ -60,7 +61,7 @@ main{
     .jumbotron__buttons{
         @include makeFlex(column);
         align-items: flex-start;
-        padding-top: 3rem;
+        padding-top: 2.5rem;
 
         &--btn{
             position: relative;
@@ -114,15 +115,20 @@ main{
 .jumbotron__image{
    width: 100%;
    height: 100%;
-   display: flex;
+   display: none;
     align-items: flex-end;
     justify-content: center;
+
     &>div{
         transform: translateY(33px);
         &>img{
              width: auto;
             height: 500px;
         }
+    }
+
+    @include media{
+        display: flex;
     }
 }
 

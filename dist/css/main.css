@@ -282,8 +282,8 @@ main {
 }
 
 .main-top {
-  height: 100vh;
   min-height: 600px;
+  max-height: 200vh;
   padding-top: 4rem;
   background: url("../images/h1_hero.jpg");
   overflow: hidden;
@@ -291,7 +291,7 @@ main {
 
 @media (min-width: 992px) {
   .main-top {
-    max-height: 500px;
+    max-height: 100vh;
   }
 }
 
@@ -306,10 +306,6 @@ main {
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   height: 100%;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 2rem;
 }
 
@@ -317,6 +313,10 @@ main {
   .jumbotron {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -361,7 +361,7 @@ main {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
 }
 
 .jumbotron__name .jumbotron__buttons--btn {
@@ -432,9 +432,7 @@ main {
 .jumbotron__image {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -451,6 +449,14 @@ main {
 .jumbotron__image > div > img {
   width: auto;
   height: 500px;
+}
+
+@media (min-width: 992px) {
+  .jumbotron__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .main-mid {

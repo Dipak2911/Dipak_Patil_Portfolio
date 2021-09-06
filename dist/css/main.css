@@ -1215,13 +1215,13 @@ footer {
 }
 
 .project-container .projects-grid .project-card:hover .project-card-img {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
 }
 
 .project-container .projects-grid .project-card:hover .project-card-content {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   max-height: 100%;
 }
 
